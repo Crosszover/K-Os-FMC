@@ -1,0 +1,165 @@
+if ag1 = "True" { toggle ag1. }.
+if ag2 = "True" { toggle ag2. }.
+if ag3 = "True" { toggle ag3. }.
+if ag4 = "True" { toggle ag4. }.
+if ag5 = "True" { toggle ag5. }.
+
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+
+LOCK STEERING TO SHIP:SRFRETROGRADE.
+wait 3.
+lock throttle to 1.
+until periapsis < 20000 {
+  print "periapsis is " + round(apoapsis,0).
+  wait 0.
+}
+lock throttle to 0.
+CLEARSCREEN.
+wait 1.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 5".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 4".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 3".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 2".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 1".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "SM RELEASE IN 0".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT 1.
+stage.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+wait 5.
+LOCK STEERING TO SHIP:SRFRETROGRADE.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "PARACHUTE DEPLOY AT < 1500 M".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT UNTIL ALT:RADAR < 1500.
+TOGGLE AG9.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "HEATSHIELD RELEASE AT < 500 M".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT UNTIL ALT:RADAR < 500.
+TOGGLE AG10.
+CLEARSCREEN.
+PRINT "AUTO-DE-ORBIT PROCEDURE".
+PRINT "==================================".
+PRINT "EXECUTING MANEUVER".
+PRINT "WAIT PLEASE.. ".
+PRINT "BRAKING THURST AT < 5 M".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "".
+PRINT "==================================".
+WAIT UNTIL ALT:RADAR < 5.
+TOGGLE AG6.
+WAIT 1.
+RUN fmc_main_menu.kos.

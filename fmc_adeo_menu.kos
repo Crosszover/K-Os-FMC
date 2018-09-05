@@ -1,29 +1,24 @@
-clearscreen.
-set exit to 0.
 if ag1 = "True" { toggle ag1. }.
 if ag2 = "True" { toggle ag2. }.
 if ag3 = "True" { toggle ag3. }.
 if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
+set exit to 0.
 CLEARSCREEN.
-PRINT "".
-PRINT "".
-PRINT "".
-PRINT "".
-PRINT "".
-PRINT "ARIES DE-ORBIT MENU".
-PRINT "".
+PRINT "AUTO-DE-ORBIT PROCEDURE".
 PRINT "==================================".
-PRINT "[AG1] - AUTOMATIC MODE".
-PRINT "[AG2] - MANUAL MODE (ASISTED)".
-PRINT "[AG3] - ".
-PRINT "[AG4] - ".
+PRINT "           <CAUTION>".
+PRINT "ACTIVATE SERVICE MODULE ENGINES".
+PRINT "  PRIOR TO DE-ORBIT PROCEDURE".
+PRINT " ".
+PRINT "PRESS - [AG1] TO START ADO BURN".
+PRINT " ".
+PRINT " ".
 PRINT "[AG5] <- BACK".
 PRINT "==================================".
 
 until exit = 1
 {
-if ag1 = "True" { RUN fmc_adeo_menu.kos. }.
-if ag2 = "True" { RUN fmc_mdeo_menu.kos. }.
+if ag1 = "True" { RUN deo.kos. }.
 if ag5 = "True" { RUN fmc_main_menu.kos. }.
 }.

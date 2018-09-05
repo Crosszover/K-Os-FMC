@@ -5,7 +5,7 @@ if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
 
 CLEARSCREEN.
-PRINT "100 KM TARGET ORBIT".
+PRINT "250 KM TARGET ORBIT".
 PRINT "==================================".
 PRINT "PRESS - [AG1] TO START COUNT-DOWN".
 PRINT " ".
@@ -53,7 +53,7 @@ STAGE.
 wait until altitude > 35000.
 PRINT "35.000 MTRS GRAVITY TURN".
 lock steering to heading(90,30).
-until apoapsis > 100000 {
+until apoapsis > 250000 {
   print "apoapsis is " + round(apoapsis,0).
   wait 0.
 //gufoe/orbit.js code ( https://gist.github.com/gufoe/ffea36be6d05b435927f )
@@ -148,9 +148,9 @@ if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
 
 CLEARSCREEN.
-PRINT "100 KM TARGET ORBIT".
+PRINT "250 KM TARGET ORBIT".
 PRINT "==================================".
-PRINT "100KM ORBIT ACHIEVED".
+PRINT "250KM ORBIT ACHIEVED".
 PRINT " ".
 PRINT " ".
 PRINT " ".

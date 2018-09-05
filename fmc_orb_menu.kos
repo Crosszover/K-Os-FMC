@@ -11,19 +11,19 @@ PRINT "".
 PRINT "".
 PRINT "".
 PRINT "".
-PRINT "ARIES FMC MAIN MENU".
+PRINT "ARIES FMC ORBITAL MANEUVERS".
 PRINT "".
 PRINT "==================================".
-PRINT "[AG1] - LKO LAUNCH MENU".
-PRINT "[AG2] - ORBITAL MANEUVERS MENU".
-PRINT "[AG3] - REENTRY PROCEDURES MENU".
-PRINT "[AG4] - SHOW VESSEL STATS".
-PRINT "[AG5] - SHUTDOWN".
+PRINT "[AG1] - EXECUTE NEXT NODE".
+PRINT "[AG2] - CHANGE APOAPSIS".
+PRINT "[AG3] - CHANGE PERIAPSIS".
+PRINT "[AG4] - ".
+PRINT "[AG5] - ".
 PRINT "==================================".
 
 until exit = 1
 {
-if ag1 = "True" { RUN fmc_lko_menu.kos. }.
+if ag1 = "True" { RUN fmc_ens_menu.kos. }.
 if ag2 = "True" { RUN fmc_orb_menu.kos. }.
 if ag3 = "True" { RUN fmc_ree_menu.kos. }.
 if ag4 = "True" { RUN fmc_stat_menu.kos. }.
