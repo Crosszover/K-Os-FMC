@@ -1,0 +1,75 @@
+if ag4 = "True" { toggle ag4. }.
+CLEARSCREEN.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+print "".
+PRINT "".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "           ".
+PRINT "".
+PRINT "                   LOADING".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "            ".
+PRINT "".
+PRINT "                   ".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "              ".
+PRINT "".
+PRINT "                   LOADING".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "               ".
+PRINT "".
+PRINT "                   ".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "                 ".
+PRINT "".
+PRINT "                   LOADING".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "".
+PRINT "                  ".
+PRINT "".
+PRINT "        COMPLETE".
+wait 1.
+clearscreen.
+PRINT "".
+PRINT "".
+PRINT "        ARIES FLIGHT MANAGEMENT COMPUTER".
+print "               ".
+print "                   ".
+print "                ".
+PRINT "        [AG4] - START]".
+PRINT "".
+PRINT "".
+wait until ag4 = "TRUE".
+if ag4 = "TRUE" { RUN fmc_main_menu.kos. }.

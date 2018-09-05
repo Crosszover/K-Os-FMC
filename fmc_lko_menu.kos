@@ -1,0 +1,34 @@
+clearscreen.
+set exit to 0.
+if ag1 = "True" { toggle ag1. }.
+if ag2 = "True" { toggle ag2. }.
+if ag3 = "True" { toggle ag3. }.
+if ag4 = "True" { toggle ag4. }.
+if ag5 = "True" { toggle ag5. }.
+CLEARSCREEN.
+PRINT "".
+PRINT "".
+PRINT "".
+PRINT "".
+PRINT "".
+PRINT "ARIES LAUNCH MENU".
+PRINT "".
+PRINT "==================================".
+PRINT "[AG1] - 100 KM".
+PRINT "[AG2] - 150 KM".
+PRINT "[AG3] - 200 KM".
+PRINT "[AG4] - 250 KM".
+PRINT "              ".
+PRINT "              ".
+PRINT "              ".
+PRINT "[AG5] <- BACK".
+PRINT "==================================".
+
+until exit = 1
+{
+if ag1 = "True" { RUN lko100.kos. }.
+if ag2 = "True" { RUN lko150.kos. }.
+if ag3 = "True" { RUN lko200.kos. }.
+if ag4 = "True" { RUN lko250.kos. }.
+if ag5 = "True" { RUN fmc_main_menu.kos. }.
+}.
