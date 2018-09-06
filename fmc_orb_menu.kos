@@ -15,17 +15,17 @@ PRINT "ARIES FMC ORBITAL MANEUVERS".
 PRINT "".
 PRINT "==================================".
 PRINT "[AG1] - EXECUTE NEXT NODE".
-PRINT "[AG2] - CHANGE APOAPSIS".
-PRINT "[AG3] - CHANGE PERIAPSIS".
+PRINT "[AG2] - CHANGE APOAPSIS (wip)".
+PRINT "[AG3] - CHANGE PERIAPSIS (wip)".
 PRINT "[AG4] - ".
-PRINT "[AG5] - ".
+PRINT "[AG5] <- BACK".
 PRINT "==================================".
 
 until exit = 1
 {
 if ag1 = "True" { RUN fmc_ens_menu.kos. }.
-if ag2 = "True" { RUN fmc_orb_menu.kos. }.
-if ag3 = "True" { RUN fmc_ree_menu.kos. }.
-if ag4 = "True" { RUN fmc_stat_menu.kos. }.
-if ag5 = "True" { shutdown. }.
+if ag2 = "True" { RUN fmc_main_menu.kos. }.
+if ag3 = "True" { RUN fmc_main_menu.kos. }.
+if ag4 = "True" { RUN fmc_main_menu.kos. }.
+if ag5 = "True" { RUN fmc_main_menu.kos. }.
 }.

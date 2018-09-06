@@ -21,7 +21,7 @@ PRINT "[AG4] - SHOW VESSEL STATS".
 PRINT "              ".
 PRINT "              ".
 PRINT "              ".
-PRINT "[AG5] - SHUTDOWN".
+PRINT "[AG5] - STANDBY".
 PRINT "==================================".
 
 until exit = 1
@@ -30,5 +30,5 @@ if ag1 = "True" { RUN fmc_lko_menu.kos. }.
 if ag2 = "True" { RUN fmc_orb_menu.kos. }.
 if ag3 = "True" { RUN fmc_ree_menu.kos. }.
 if ag4 = "True" { RUN fmc_stat_menu.kos. }.
-if ag5 = "True" { shutdown. }.
+if ag5 = "True" { RUN fmc.kos. }.
 }.
