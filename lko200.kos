@@ -5,61 +5,382 @@ if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
 
 CLEARSCREEN.
-PRINT "200 KM TARGET ORBIT".
-PRINT "==================================".
-PRINT "PRESS - [AG1] TO START COUNT-DOWN".
+PRINT "200 KM TARGET ORBIT          ".
+PRINT "=================================================".
 PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT " ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
 
-wait until ag1 = "TRUE".
 CLEARSCREEN.
 lock steering to heading(90,90).
 lock throttle to 1.
-PRINT "9".
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 9".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "8".
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 8".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "7".
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 7".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "6".
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 6".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "5".
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 5".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "4".
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 4".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "3".
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 3".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
 WAIT 1.
-PRINT "2".
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 2".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 1.
-PRINT "1".
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "COUNT-DOWN TO LAUNCH: 1".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+WAIT 1.
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
 PRINT "IGNITION".
+print " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
 STAGE.
-wait until altitude > 8000.
-PRINT "8.000 MTRS GRAVITY TURN".
+until SHIP:ALTITUDE > 8000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  PRINT "WAITING FOR 8.000 MTRS GRAVITY TURN".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+  wait 0.
+  }.
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "PERFORMING 8.000 MTRS GRAVITY TURN".
+print " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 lock steering to heading(90,80).
-wait until altitude > 20000.
-PRINT "20.000 MTRS GRAVITY TURN".
+
+until SHIP:ALTITUDE > 15000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  PRINT "WAITING FOR 15.000 MTRS GRAVITY TURN".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+  wait 0.
+  }.
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "PERFORMING 15.000 MTRS GRAVITY TURN".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
+lock steering to heading(90,60).
+
+
+until SHIP:ALTITUDE > 20000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  PRINT "WAITING FOR 20.000 MTRS GRAVITY TURN".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+  wait 0.
+  }.
+
+//wait until altitude > 20000.
+
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "PERFORMING 20.000 MTRS GRAVITY TURN".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 lock steering to heading(90,45).
-wait until altitude > 30000.
+
+until SHIP:ALTITUDE > 30000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  PRINT "WAITING FOR 30.000 MTRS TO STAGE RELEASE".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+  wait 0.
+  }.
+
+
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
 PRINT "30.000 MTRS STAGE RELEASE".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
 WAIT 2.
 STAGE.
-wait until altitude > 35000.
-PRINT "35.000 MTRS GRAVITY TURN".
-lock steering to heading(90,30).
-until apoapsis > 200000 {
-  print "apoapsis is " + round(apoapsis,0).
+
+until SHIP:ALTITUDE > 35000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  PRINT "WAITING FOR 35.000 MTRS GRAVITY TURN".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
   wait 0.
+  }.
+  
+CLEARSCREEN.
+PRINT "200 KM TARGET ORBIT         ".
+PRINT "=================================================".
+PRINT "PERFORMING 35.000 MTRS GRAVITY TURN".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
+lock steering to heading(90,30).
+
+until apoapsis > 200000 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  print "APOAPSIS: " + round(apoapsis,0).
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+  wait 0.
+  }.
+  
+  
 //gufoe/orbit.js code ( https://gist.github.com/gufoe/ffea36be6d05b435927f )
-}
 lock throttle to 0.
-print "Waiting apoapsis".
+
+//ETA:Apoapsis
+
+until ETA:Apoapsis < 60 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  print "APOAPSIS: " + round(apoapsis,0).
+  PRINT "ETA TO APOAPSIS: " + round( ETA:Apoapsis,0).
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "WARP IF NEEDED".
+  PRINT "=================================================".
+  print "COASTING TO CIRCULARIZATION BURN".
+  wait 0.
+  }.
+
+until ETA:Apoapsis < 25 {
+  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "ALTITUDE: " + round( SHIP:ALTITUDE,0) + " MTRS".
+  print "APOAPSIS: " + round(apoapsis,0).
+  PRINT "ETA TO APOAPSIS: " + round( ETA:Apoapsis,0).
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "WARP IF NEEDED".
+  PRINT "=================================================".
+  print "COASTING TO CIRCULARIZATION BURN".
+  wait 0.
+  }.
+  
+SET WARP TO 0.
+
 lock steering to heading(90,0). // Look at east (90), zero degrees above the horizon
 wait eta:apoapsis-.1. // Wait to reach apoapsis
 lock throttle to 1. // Full power
@@ -88,6 +409,7 @@ until (oldEcc < orbit:eccentricity) { // Exists when the eccentricity stop dropp
     
     // Current stage ended?
     until (maxThrust > 0) {
+		WAIT 2.
         stage.
     }
     set thrust to power*maxThrust.
@@ -106,9 +428,20 @@ until (oldEcc < orbit:eccentricity) { // Exists when the eccentricity stop dropp
     lock steering to heading(90,angle).
     
     // Print stats
-    clearscreen.
-    print "Attraction:  "+gForce.
-    print "Centripetal: "+cForce.
+	  CLEARSCREEN.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ATRACTION: "+gForce.
+  print "CENTRIPETAL: "+cForce.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "=================================================".
+
+    
     
     // Wait one tenth of a second
     wait .1.
@@ -116,50 +449,141 @@ until (oldEcc < orbit:eccentricity) { // Exists when the eccentricity stop dropp
 
 // Shut down engines
 lock throttle to 0.
-print "Orbit reached, eccentricity: "+orbit:eccentricity.
+  clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 5".
+  PRINT "=================================================".
 
-PRINT "FAIRIND DEPLOY IN 5".
+
 WAIT 1.
-PRINT "FAIRIND DEPLOY IN 4".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 4".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "FAIRIND DEPLOY IN 3".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 3".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "FAIRIND DEPLOY IN 2".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 2".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "FAIRIND DEPLOY IN 1".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 1".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "FAIRIND DEPLOY IN 0".
-WAIT 1.
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "FAIRING DEPLOY IN 0".
+  PRINT "=================================================".
 toggle ag7.
-WAIT 5.
-PRINT "SOLAR ARRAY DEPLOY IN 3".
+WAIT 2.
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "SOLAR ARRAY DEPLOY IN 3".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "SOLAR ARRAY DEPLOY IN 2".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "SOLAR ARRAY DEPLOY IN 2".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "SOLAR ARRAY DEPLOY IN 1".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "SOLAR ARRAY DEPLOY IN 1".
+  PRINT "=================================================".
 WAIT 1.
-PRINT "SOLAR ARRAY DEPLOY IN 0".
+clearscreen.
+  PRINT "200 KM TARGET ORBIT         ".
+  PRINT "=================================================".
+  print "APOAPSIS: " + round(apoapsis,0).
+  print "ORBIT REACHED".
+  print "CENTRIPETAL: "+cForce.
+  PRINT "ORBIT ECCENTRICITY: " + orbit:eccentricity.
+  PRINT " ".
+  PRINT " ".
+  PRINT " ".
+  PRINT "SOLAR ARRAY DEPLOY IN 0".
+  PRINT "=================================================".
 toggle ag8.
-.
-if ag1 = "True" { toggle ag1. }.
-if ag2 = "True" { toggle ag2. }.
-if ag3 = "True" { toggle ag3. }.
-if ag4 = "True" { toggle ag4. }.
-if ag5 = "True" { toggle ag5. }.
 
-CLEARSCREEN.
-PRINT "200 KM TARGET ORBIT".
-PRINT "==================================".
-PRINT "200KM ORBIT ACHIEVED".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
+
 UNLOCK STEERING.
 UNLOCK THROTTLE.
-wait until ag5 = "TRUE".
-RUN fmc_lko_menu.kos.
+RUN lko200conf.kos.

@@ -5,7 +5,7 @@ if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
 CLEARSCREEN.
 PRINT "EXECUTE NEXT NODE".
-PRINT "==================================".
+PRINT "=================================================".
 PRINT "EXECUTING NODE".
 PRINT "WAIT PLEASE.. ".
 PRINT " ".
@@ -14,7 +14,7 @@ PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT "".
-PRINT "==================================".
+PRINT "=================================================".
 
 set nd to nextnode.
 //print out node's basic parameters - ETA and deltaV

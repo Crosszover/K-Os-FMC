@@ -3,24 +3,37 @@ if ag2 = "True" { toggle ag2. }.
 if ag3 = "True" { toggle ag3. }.
 if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
-set exit to 0.
-CLEARSCREEN.
-PRINT "VESSEL STATS".
-PRINT "==================================".
-PRINT "[AG1] SPACECRAFT".
-PRINT "[AG2] NAVIGATION".
-PRINT "[AG3] FUEL LEVEL".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT " ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
 
-until exit = 1
+until ag5 = "TRUE"
 {
+CLEARSCREEN.
+PRINT "VESSEL STATS                       [AG5] <- BACK".
+PRINT "=================================================".
+PRINT "NAVIGATION".
+PRINT "ORBIT AP: " + round(apoapsis,0) + " MTRS".
+PRINT "ORBIT PA: " + round (periapsis,0) + " MTRS".
+PRINT "AP ETA: "   + eta:apoapsis + " SEC".
+PRINT "PE ETA: "   + eta:periapsis + " SEC".
+//PRINT "ORB TIME: " + orbit:time + " SEC".
+PRINT "ORB ECCE: " + orbit:eccentricity + " DGR".
+PRINT "ORB BODY: " + ORBIT:BODY.
+PRINT "SHIP LAT: " + SHIP:LATITUDE.
+PRINT "SHIP LON: " + SHIP:LONGITUDE.
+PRINT "=================================================".
+PRINT "RESOURCES".
+LIST RESOURCES.
+
+
+
+
+
+
+
+
+
+
+WAIT .5.
+
 
 if ag5 = "True" { RUN fmc_main_menu.kos. }.
 }.

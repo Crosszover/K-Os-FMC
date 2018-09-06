@@ -13,7 +13,7 @@ PRINT "".
 PRINT "".
 PRINT "ARIES FMC MAIN MENU".
 PRINT "".
-PRINT "==================================".
+PRINT "=================================================".
 PRINT "[AG1] - LKO LAUNCH MENU".
 PRINT "[AG2] - ORBITAL MANEUVERS MENU".
 PRINT "[AG3] - REENTRY PROCEDURES MENU".
@@ -22,7 +22,7 @@ PRINT "              ".
 PRINT "              ".
 PRINT "              ".
 PRINT "[AG5] - STANDBY".
-PRINT "==================================".
+PRINT "=================================================".
 
 until exit = 1
 {

@@ -11,15 +11,14 @@ PRINT "".
 PRINT "".
 PRINT "".
 PRINT "".
-PRINT "ARIES FMC ORBITAL MANEUVERS".
-PRINT "".
-PRINT "==================================".
+PRINT "ARIES FMC ORBITAL MANEUVERS        [AG5] <- BACK".
+PRINT "=================================================".
 PRINT "[AG1] - EXECUTE NEXT NODE".
 PRINT "[AG2] - CHANGE APOAPSIS (wip)".
 PRINT "[AG3] - CHANGE PERIAPSIS (wip)".
-PRINT "[AG4] - ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
 
 until exit = 1
 {

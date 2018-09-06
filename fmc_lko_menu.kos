@@ -11,9 +11,8 @@ PRINT "".
 PRINT "".
 PRINT "".
 PRINT "".
-PRINT "ARIES LAUNCH MENU".
-PRINT "".
-PRINT "==================================".
+PRINT "ARIES LAUNCH MENU                  [AG5] <- BACK".
+PRINT "=================================================".
 PRINT "[AG1] - 100 KM".
 PRINT "[AG2] - 150 KM".
 PRINT "[AG3] - 200 KM".
@@ -21,14 +20,14 @@ PRINT "[AG4] - 250 KM".
 PRINT "              ".
 PRINT "              ".
 PRINT "              ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
+PRINT "              ".
+PRINT "=================================================".
 
 until exit = 1
 {
-if ag1 = "True" { RUN lko100.kos. }.
-if ag2 = "True" { RUN lko150.kos. }.
-if ag3 = "True" { RUN lko200.kos. }.
-if ag4 = "True" { RUN lko250.kos. }.
+if ag1 = "True" { RUN lko100conf.kos. }.
+if ag2 = "True" { RUN lko150conf.kos. }.
+if ag3 = "True" { RUN lko200conf.kos. }.
+if ag4 = "True" { RUN lko250conf.kos. }.
 if ag5 = "True" { RUN fmc_main_menu.kos. }.
 }.

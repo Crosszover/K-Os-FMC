@@ -11,15 +11,14 @@ PRINT "".
 PRINT "".
 PRINT "".
 PRINT "".
-PRINT "ARIES DE-ORBIT MENU".
-PRINT "".
-PRINT "==================================".
+PRINT "ARIES DE-ORBIT MENU                [AG5] <- BACK".
+PRINT "=================================================".
 PRINT "[AG1] - AUTOMATIC MODE".
-PRINT "[AG2] - MANUAL MODE (ASISTED)".
-PRINT "[AG3] - ".
-PRINT "[AG4] - ".
-PRINT "[AG5] <- BACK".
-PRINT "==================================".
+PRINT "[AG2] - MANUAL MODE (ASSISTED)".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
 
 until exit = 1
 {

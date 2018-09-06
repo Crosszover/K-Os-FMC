@@ -5,9 +5,9 @@ if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
 set exit to 0.
 CLEARSCREEN.
-PRINT "EXECUTE NEXT NODE                  [AG5] <- BACK".
+PRINT "250 KM TARGET ORBIT                [AG5] <- BACK".
 PRINT "=================================================".
-PRINT "PRESS - [AG1] TO EXECUTE NODE".
+PRINT "PRESS - [AG1] TO CONFIRM".
 PRINT " ".
 PRINT " ".
 PRINT " ".
@@ -19,6 +19,6 @@ PRINT "=================================================".
 
 until exit = 1
 {
-if ag1 = "True" { RUN ens.kos. }.
-if ag5 = "True" { RUN fmc_main_menu.kos. }.
+if ag5 = "True" { RUN fmc_lko_menu.kos. }.
+if ag1 = "True" { RUN lko250.kos. }.
 }.
