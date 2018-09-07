@@ -13,7 +13,7 @@ PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT " ".
-PRINT "".
+PRINT "WARP IF NEEDED".
 PRINT "=================================================".
 
 set nd to nextnode.
@@ -41,6 +41,9 @@ set max_acc to ship:maxthrust/ship:mass.
 set burn_duration to nd:deltav:mag/max_acc.
 print "Crude Estimated burn duration: " + round(burn_duration) + "s".
 wait until nd:eta <= (burn_duration/2 + 60).
+
+set warp to 0.
+
 set np to nd:deltav. //points to node, don't care about the roll direction.
 lock steering to np.
 

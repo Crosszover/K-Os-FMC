@@ -5,6 +5,7 @@ if ag2 = "True" { toggle ag2. }.
 if ag3 = "True" { toggle ag3. }.
 if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
+
 CLEARSCREEN.
 PRINT "".
 PRINT "".

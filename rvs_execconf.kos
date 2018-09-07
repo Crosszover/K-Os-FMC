@@ -1,0 +1,24 @@
+if ag1 = "True" { toggle ag1. }.
+if ag2 = "True" { toggle ag2. }.
+if ag3 = "True" { toggle ag3. }.
+if ag4 = "True" { toggle ag4. }.
+if ag5 = "True" { toggle ag5. }.
+set exit to 0.
+CLEARSCREEN.
+PRINT "RENDEZVOUS EXECUTION               [AG5] <- BACK".
+PRINT "=================================================".
+PRINT "PRESS - [AG1] TO CONFIRM".
+PRINT " ".
+PRINT "                < WARNING >".
+PRINT " SELECT RVS TARGET PRIOT TO CONFIRM MANEUVER".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT " ".
+PRINT "=================================================".
+
+until exit = 1
+{
+if ag5 = "True" { RUN fmc_lko_menu.kos. }.
+if ag1 = "True" { RUN rvs_exec.kos. }.
+}.

@@ -432,9 +432,9 @@ until (oldEcc < orbit:eccentricity) { // Exists when the eccentricity stop dropp
   PRINT "250 KM TARGET ORBIT         ".
   PRINT "=================================================".
   print "APOAPSIS: " + round(apoapsis,0).
+  print "PERIAPSIS: " + round(periapsis,0).
   print "ATRACTION: "+gForce.
   print "CENTRIPETAL: "+cForce.
-  PRINT " ".
   PRINT " ".
   PRINT " ".
   PRINT " ".

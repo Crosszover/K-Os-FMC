@@ -1,12 +1,10 @@
 clearscreen.
-
+set exit to 0.
 if ag1 = "True" { toggle ag1. }.
 if ag2 = "True" { toggle ag2. }.
 if ag3 = "True" { toggle ag3. }.
 if ag4 = "True" { toggle ag4. }.
 if ag5 = "True" { toggle ag5. }.
-
-set exit to 0.
 
 CLEARSCREEN.
 PRINT "".
@@ -14,20 +12,20 @@ PRINT "".
 PRINT "".
 PRINT "".
 PRINT "".
-PRINT "ARIES FMC ORBITAL MANEUVERS        [AG5] <- BACK".
+PRINT "ORBITAL MANEUVERS MENU             [AG5] <- BACK".
 PRINT "=================================================".
-PRINT "[AG1] - EXECUTE NEXT NODE MENU".
-PRINT "[AG2] - ORBITAL MANEUVERS".
-PRINT "[AG3] - DOCKING MENU".
+PRINT " ".
+PRINT " ".
+PRINT " ".
 PRINT " ".
 PRINT " ".
 PRINT "=================================================".
 
 until exit = 1
 {
-if ag1 = "True" { RUN fmc_ens_menu.kos. }.
-if ag2 = "True" { RUN fmc_om_menu.kos. }.
+if ag1 = "True" { RUN fmc_main_menu.kos. }.
+if ag2 = "True" { RUN fmc_main_menu.kos. }.
 if ag3 = "True" { RUN fmc_main_menu.kos. }.
 if ag4 = "True" { RUN fmc_main_menu.kos. }.
-if ag5 = "True" { RUN fmc_main_menu.kos. }.
+if ag5 = "True" { RUN fmc_orb_menu.kos. }.
 }.
